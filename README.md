@@ -1,2 +1,2 @@
 # sayanwebrepo
-medical shop and hardware EVM project
+medical shop which have contain Java, JSP, Servlet, JDBC, MYSQL, HTML

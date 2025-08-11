@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Medical Shop Login</title>
+<style>
+    body {
+        background: url('shop-image.jpg') no-repeat center center fixed;
+        background-size: cover;
+        font-family: "Georgia", serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .floating-circles {
+        display: none;
+    }
+
+    .container {
+        text-align: center;
+        position: relative;
+        z-index: 1;
+    }
+
+    .card {
+        background-color: rgba(255, 255, 255, 0.9); /* slightly transparent for background visibility */
+        padding: 30px;
+        border: 2px solid #8fbc8f;
+        border-radius: 10px;
+        width: 360px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+        color: #8a2be2;
+        font-size: 1.8em;
+        margin-bottom: 20px;
+    }
+
+    input,
+    select {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #87ceeb;
+        border-radius: 5px;
+        background-color: #ffffff;
+        font-family: "Georgia", serif;
+        font-size: 1em;
+    }
+
+    button {
+        background-color: #20b2aa;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+        font-family: "Georgia", serif;
+        font-size: 1em;
+    }
+
+    button:hover {
+        background-color: #2e8b57;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    a {
+        font-size: 1em;
+        text-decoration: none;
+        color: #1e90ff;
+    }
+
+    a:hover {
+        color: #ff4500;
+    }
+</style>
+
+</head>
+
+<body>
+	<div class="container">
+		<form action="Login" id="loginForm">
+			<div id="loginBox" class="card">
+				<h2>
+					<i class="fas fa-pills"></i> Medical Shop Login
+				</h2>
+				<input type="text" id="userid" name="userid"
+					placeholder="Enter your ID" required> <input
+					type="password" id="password" name="pass"
+					placeholder="Enter your password" required> <select
+					id="role" name="job">
+					<option value="">SELECT</option>
+					<option value="admin">Admin</option>
+					<option value="user">User</option>
+				</select>
+				<button>Login</button>
+				<a href="Signup.html">Signup</a>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

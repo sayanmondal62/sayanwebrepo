@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Shop Signup</title>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: "Georgia", serif;
+        background: url('shop-image.jpg') no-repeat center center fixed;
+        background-size: cover;
+        margin: 0;
+    }
+
+    .floating-circles {
+        display: none;
+    }
+
+    .container {
+        text-align: center;
+        position: relative;
+        z-index: 1;
+    }
+
+    .card {
+        background: rgba(255, 255, 255, 0.92); /* light transparent card */
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h2 {
+        color: #8a2be2; /* violet */
+        margin-bottom: 15px;
+    }
+
+    input, select {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #87ceeb; /* light blue */
+        border-radius: 5px;
+        font-family: "Georgia", serif;
+        font-size: 1em;
+    }
+
+    button {
+        background: #20b2aa; /* teal */
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+        font-size: 1em;
+    }
+
+    button:hover {
+        background: #2e8b57; /* sea green */
+    }
+
+    .back-btn {
+        background: #dc3545; /* red */
+        margin-top: 5px;
+    }
+
+    .back-btn:hover {
+        background: #c82333;
+    }
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <form action="Signup">
+            <div class="card">
+                <h2>Signup</h2>
+                <input type="text" name="userid" placeholder="User ID" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <select name="post" required>
+                    <option value="">Select Role</option>
+                    <option value="admin">Admin</option>
+                    <option value="user">User</option>
+                </select>
+                <button>Signup</button>
+                <button type="button" class="back-btn" onclick="history.back()">Back</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

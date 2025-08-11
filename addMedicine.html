@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Insert Medicine</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #74b9ff, #0984e3);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #fff;
+    }
+    .container {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 400px;
+      backdrop-filter: blur(10px);
+    }
+    h1 {
+      text-align: center;
+      color: #0984e3;
+      font-weight: 600;
+    }
+    label {
+      font-weight: 500;
+      color: #333;
+    }
+    input[type="text"], input[type="number"], input[type="date"] {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border-radius: 8px;
+      border: none;
+      background-color: #f1f2f6;
+      font-size: 14px;
+    }
+    input:focus {
+      outline: none;
+      border: 2px solid #74b9ff;
+    }
+    button {
+      background-color: #0984e3;
+      color: white;
+      border: none;
+      padding: 14px;
+      cursor: pointer;
+      width: 100%;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 500;
+      transition: background-color 0.3s;
+      margin-top: 10px;
+    }
+    button:hover {
+      background-color: #74b9ff;
+    }
+    .back-button {
+      background-color: #b2bec3;
+    }
+    .back-button:hover {
+      background-color: Red;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Insert Medicine</h1>
+    <form action="InsertMedicine">
+      <label for="name">Medicine Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="no">Quantity of Medicine:</label>
+      <input type="number" id="no" name="stock" step="1" required />
+
+      <label for="price">Price:</label>
+      <input type="text" id="price" name="price" required />
+
+      <label for="exp_date">Expiration Date:</label>
+      <input type="date" id="exp_date" name="exp_date" required />
+
+      <button>Insert Medicine</button>
+      <button type="button" class="back-button" onclick="window.history.back()">Back</button>
+    </form>
+  </div>
+</body>
+</html>
